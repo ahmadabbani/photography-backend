@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiItemItem extends Struct.SingleTypeSchema {
   collectionName: 'items';
   info: {
+    description: '';
     displayName: 'item';
     pluralName: 'items';
     singularName: 'item';
@@ -391,6 +392,7 @@ export interface ApiItemItem extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    updatelocal: Schema.Attribute.Integer;
   };
 }
 
