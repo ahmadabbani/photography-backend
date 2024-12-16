@@ -1,9 +1,7 @@
 // config/plugins.js
 module.exports = ({ env }) => ({
   // ...
-  jwt: {
-    expiresIn: "7d", // Set token expiration to 7 days or more
-  },
+
   upload: {
     config: {
       provider: "cloudinary",
@@ -21,3 +19,7 @@ module.exports = ({ env }) => ({
   },
   // ...
 });
+
+//  jwt: {
+//expiresIn: "7d", // Set token expiration to 7 days or more
+//},
